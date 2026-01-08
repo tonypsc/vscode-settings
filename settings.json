@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Solarized Light",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -77,7 +77,11 @@
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
-      "before": ["<leader>", "b", "b"],
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["L"],
       "commands": ["workbench.action.nextEditorInGroup"]
     },
     {
@@ -93,5 +97,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "compact",
+  "workbench.sideBar.location": "right",
+  "cSpell.userWords": ["clockio"],
+  "claudeCode.preferredLocation": "sidebar"
 }
